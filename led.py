@@ -3,7 +3,7 @@ _unexportpath = '/sys/class/gpio/gpiochip0/subsystem/unexport'
 _gpiopath = '/sys/class/gpio/gpio'
 
 def writetofs(fname,data):
-	f = open(fname, w)
+	f = open(fname, 'w')
     f.write(data)
     f.close()
     
